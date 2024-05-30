@@ -21,20 +21,21 @@
             height: 400px; /* Ajuste cette valeur selon tes besoins */
             border: 1px solid #ddd;
             overflow: hidden;
+            position: relative;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
 <body>
     <div id="aqi-widget-container">
-        <script type="text/javascript">
-            var content = "<div onclick='window.location=\"https://aqicn.org/city/montreal/\"' style='overflow:hidden;font-family: Cambria,\"Palatino Linotype\",\"Book Antiqua\",\"URW Palladio L\",serif;background-color:#f6f9fc;border:1px solid white;min-width:100%;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-shadow:0 1px 3px rgba(0,0,0,0.6);-moz-box-shadow:0 1px 3px rgba(0,0,0,0.6);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.6);padding:10px;color:#444;'>"
-                + "<div style='font-size:20px;'>Montreal Air Pollution.</div>"
-                + "<div style='font-size:30px;font-weight:bold;margin-top:5px;'>27</div>"
-                + "<div style='font-size:20px;'>Good</div>"
-                + "<div style='font-size:12px;margin-top:5px;'>Updated on Thursday 15:00</div>"
-                + "</div>";
-            document.write(content);
-        </script>
+        <iframe src="https://widgets.waqi.info/jswgt/?size=large&city=@5922"></iframe>
     </div>
 </body>
 </html>
