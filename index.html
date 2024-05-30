@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AQI Widget</title>
     <style>
-        #aqi-widget-container {
-            width: 100%;
-            max-width: 800px; /* Ajuste cette valeur selon tes besoins */
-            margin: 0 auto;
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        #aqi-widget {
+        iframe {
             width: 100%;
-            height: auto;
+            max-width: 600px; /* Ajuste cette valeur selon tes besoins */
+            height: 400px; /* Ajuste cette valeur selon tes besoins */
+            border: none;
         }
     </style>
 </head>
 <body>
-    <div id="aqi-widget"></div>
-    <script type='text/javascript' src='https://widgets.waqi.info/jswgt/?size=xsmall&city=@5922'></script>
-    <noscript>Not seeing a widget? (<a href='https://aqicn.org/'>More info</a>)</noscript>
+    <iframe src="https://widgets.waqi.info/jswgt/?size=large&city=@5922"></iframe>
 </body>
 </html>
